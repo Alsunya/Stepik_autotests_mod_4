@@ -12,3 +12,11 @@ class LoginPageLocators():
     REG_CONFIRM = (By.CSS_SELECTOR, "#id_registration-password2")
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REG_FORM = (By.CSS_SELECTOR, "#register_form")
+
+class ProductPageLocators():
+    ADD_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".breadcrumb .active")
+    CART_PRICE = (By.CSS_SELECTOR, ".alertinner p strong")
+    PRODUCT_PRICE =(By.CSS_SELECTOR, ".col-sm-6 .price_color")
+    CART_NAME = (By.CSS_SELECTOR, ".alert-success .alertinner strong")
+    
