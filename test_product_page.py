@@ -18,4 +18,17 @@ def test_guest_can_add_product_to_basket(browser,p_link):
     page.solve_quiz_and_get_code()
     page.should_be_correct_adding_product_name()
     page.should_be_correct_adding_product_price()
-    
+
+@pytest.mark.login_guest
+class TestLoginFromMainPage():    
+    def test_guest_should_see_login_link_on_product_page(self, browser):
+        self.link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
+        page = ProductPage(browser, self.link)
+        page.open()
+        page.should_be_login_link()
+
+    def test_guest_can_go_to_login_page_from_product_page(self, browser):
+        self.link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
+        page = ProductPage(browser, self.link)
+        page.open()
+        page.go_to_login_page()

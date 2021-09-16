@@ -19,4 +19,9 @@ class ProductPageLocators():
     CART_PRICE = (By.CSS_SELECTOR, ".alertinner p strong")
     PRODUCT_PRICE =(By.CSS_SELECTOR, ".col-sm-6 .price_color")
     CART_NAME = (By.CSS_SELECTOR, ".alert-success .alertinner strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alertinner")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     
